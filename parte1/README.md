@@ -30,7 +30,7 @@ postgres=# \q
 You can create sql scripts to do all the SQL job, to run this scripts you will
 need to copy all the file to the container. To do it, run:
 ```
-$ docker cp scripts/. parte1_db_1:/scripts && docker cp parte1_db_1:/scripts scripts
+$ docker cp scripts/. parte1_db_1:/scripts 
 ```
 After copy the scrypts you can run all of them one by one, inside the postgres 
 interactive terminal, running:
