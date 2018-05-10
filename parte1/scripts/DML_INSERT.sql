@@ -15,11 +15,11 @@ VALUES(1, 'Comum'),
       (2, 'Superusuário');
 
 INSERT INTO MODULO
-VALUES(1, 'Desenvolvimento de software', 4, 4, 1),
-      (2, 'Banco de Dados', 2, 3, 1),
-      (3, 'Introdução a IA', 2, 3, 2),
-      (4, 'Núcleo 1', 5, 5, 3),
-      (5, 'Otimização 1', 2, 2, 4);
+VALUES(1, 'Desenvolvimento de software', 4, 1),
+      (2, 'Banco de Dados', 2, 1),
+      (3, 'Introdução a IA', 2, 2),
+      (4, 'Núcleo 1', 5, 3),
+      (5, 'Otimização 1', 2, 4);
 
 INSERT INTO USUARIO
 VALUES('victor.joao@usp.br', 'fea342', 'Victor João', 2),
@@ -53,10 +53,10 @@ INSERT INTO OBRIGATORIA
 VALUES('MAC0323');
 
 INSERT INTO OPTATIVA
-VALUES('PNV2324', 'Livre'),
-      ('CEN0120', 'Livre'),
-      ('CJE0551', 'Livre'),
-      ('MAC0218', 'Eletiva');
+VALUES('PNV2324', true, false),
+      ('CEN0120', true, false),
+      ('CJE0551', true, false),
+      ('MAC0218', true, true);
 
 INSERT INTO OP_MOD
 VALUES('MAC0218', 1);

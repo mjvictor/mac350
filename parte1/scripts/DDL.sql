@@ -20,7 +20,6 @@ CREATE TABLE MODULO(
     cod_mod	integer not NULL,
     nome_mod	varchar(50) not NULL,
     min_dis	integer not NULL,
-    total_dis	integer not NULL,
     cod_tr 	integer not NULL,
     CONSTRAINT pk_mod PRIMARY KEY (cod_mod),
     CONSTRAINT fk_tr 
@@ -92,7 +91,8 @@ CREATE TABLE OBRIGATORIA(
 
 CREATE TABLE OPTATIVA(
     cod_dis 		varchar(7) not NULL,
-    tipo_optativa 	varchar(7) not NULL,
+    flag_livre		boolean not NULL,
+    flag_eletiva	boolean not NULL,
     CONSTRAINT pk_opt PRIMARY KEY (cod_dis),
     CONSTRAINT fk_dis
 	FOREIGN KEY (cod_dis)
