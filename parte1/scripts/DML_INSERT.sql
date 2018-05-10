@@ -28,3 +28,39 @@ VALUES('victor.joao@usp.br', 'fea342', 'Victor João', 2),
       ('akasolak@gmail.com', 'fie828', 'André Solak', 2),
       ('gabriely.pereira@usp.br', 'fje902', 'Gabriely Rangel', 2);
 
+INSERT INTO ALUNO
+VALUES('9793551', 2016, 'victor.joao@usp.br');
+
+INSERT INTO SER_PER
+VALUES(1, 1),
+      (4, 2),
+      (2, 2),
+      (3, 2),
+      (1, 2);
+
+INSERT INTO DISCIPLINA
+VALUES('PNV2324', 'Instalações de Máquinas Marítimas',   
+      'Projeto de instalação propulsoras…', 4, 60),
+      ('CEN0120', 'Princípios de Bioquímica', 'A célula, 
+       macromoléculas, água e soluto. P…', 2, 30),
+      ('CJE0551', 'Jornalismo Científico', 'Conhecimento 
+       dos conceitos relacionados ao bo…',  5, 105),
+      ('MAC0323', 'ED II', 'Aula do Cueio', 4, 60),
+      ('MAC0218', 'TEC PROG II', 'Sei lá, não vou na aula do
+	Gubi', 4, 60);
+
+INSERT INTO OBRIGATORIA
+VALUES('MAC0323');
+
+INSERT INTO OPTATIVA
+VALUES('PNV2324', 'Livre'),
+      ('CEN0120', 'Livre'),
+      ('CJE0551', 'Livre'),
+      ('MAC0218', 'Eletiva');
+
+INSERT INTO OP_MOD
+VALUES('MAC0218', 1);
+
+INSERT INTO PLANEJA
+VALUES('MAC0218', '9793551', 'Eletiva'),
+      ('MAC0323', '9793551', 'Obrigatoria');
